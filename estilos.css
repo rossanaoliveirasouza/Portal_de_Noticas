@@ -1,0 +1,148 @@
+/* Header Area */
+.header_area {
+    margin: 0px;
+    padding-top:0px;
+    justify-content: center;
+}
+.nav-item{
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+header div a{
+    color: black;
+}
+.navbar-nav{
+    margin: 0px;
+}
+
+.logo{
+    width: 400px;
+    padding: 5px;
+}
+/* Header Area End */
+
+/* Main Area */
+.card {
+    margin-bottom: 20px;
+}
+.carousel  {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 100%;
+}
+.carousel-inner{
+
+}
+a :hover{
+    color: black;
+    text-decoration: none;
+    text-emphasis-color: none;
+    text-decoration-line: none;
+}
+.football{
+    text-align: center;
+    padding-top: 10px;
+    background-color: green;
+    color: white;
+}
+.other_sports{
+    text-align: center;
+    padding-top: 10px;
+    background-color: gray;
+    color: white;
+}
+.card-body{
+    text-align: justify;
+    padding-top: 0px;
+}
+.card-title{
+    text-align: center;
+    padding-top: 5px;
+}
+.carousel_main{
+    padding-bottom: 0px;
+    margin: 0px;
+}
+/* Main Area End */
+
+/* Aside Area */
+.yoga_section{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #4db3fc;
+    color: white;
+}
+.card-yoga{
+    height: 70px;
+    text-align: justify;
+    margin: 5px;
+    color: #0796fc;
+}
+.BreakingNews_section{
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgb(184, 69, 69);
+    color: white;
+}
+.card-news{
+    color: rgb(184, 69, 69);
+}
+/* Aside Area End */
+
+/* Smaller Screens */
+ @media screen and (max-width:500px){ 
+    .header{
+        display: table;
+        top: 0px;
+        padding-left: 3%;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+
+    }
+    .carousel_main{
+        width: 100%;
+    }
+    .header nav{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+        max-width: 300px;
+    }
+    .quick_links{
+        display: none;
+    }
+    .footer{
+        padding-left: 30px;
+    }
+}
+
+/* Smaller Screens End */
+
+/* Footer Area */
+.footer{
+    padding-top: 20px;
+    margin-top: 20px;
+    background: #e3f2fd;
+    color: black;
+}
+.footer_area{
+    padding: 20px;
+    text-align: center  ;
+}
+.copyright{
+    text-align: center;
+}
+.fa-twitter{
+    width: 50px;
+    size: 7mm;
+}
+/* Footer Area End */

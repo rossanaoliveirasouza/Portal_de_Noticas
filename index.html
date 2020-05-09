@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<!--Trabalho de Software apresentado como requisito parcial à aprovação na disciplina Desevolvimento Web
+    Professores: Rommel Vieira Carneiro e Marcos Arrais
+    Aluna: Rossana de Oliveira Souza
+    Matricula 705085
+    1 periodo
+    Ciencia da Computacao - PUC Liberdade -->
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>SPORTS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/03cf5e0551.js" crossorigin="anonymous"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+<!-- Login Area -->
+<header class="container header">
+    <div class="row">
+        <div class="col-12 header_area">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                    <img src="imagens/logo.jpeg" class="logo">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-10 login_area">
+                    <ul class="nav justify-content-end login_area">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Subscribe</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Log In</a>
+                        </li>
+                      </ul>
+                </div>
+
+                 <!-- Nav Menu Area -->
+                <div class="row"></div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color: green;">
+                                        <h3>FOOTBALL</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color: rgb(184, 69, 69);">
+                                        <h3>BREAKING NEWS</h3>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="color:#0796fc;">
+                                        <h3>YOGA</h3>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                            </div>
+                        </nav>
+                    </div>    
+                </div>        
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main class="container main">
+        <div class="row">
+            <!--Carousel Area-->
+            <div class="col-12 col-sm-12 col-md-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="imagens/carousel_01.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Messi X Cristiano</h1>
+                          <h3>Who is the best?</h3>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagens/carousel_02.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Is Running outside a Risk for Spreading Covid-19?</h1>                       
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagens/carousel_03.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>F1 Schedule 2020 - latest information</h1>                        
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        
+            <!--Main Cards Area-->
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="main_area">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="card football">
+                                <h2>Football</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/football_01.png" class="card-img-top" alt="Top_News">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card-body">
+                                <a href="#">
+                                    <h4 class="card-title" style="color: green">Football's financial situation with coronavirus</h4>
+                                </a>
+                                <p class="card-text" style="color: green">With the coronavirus in full swing around Europe, the sports world, and more specifically football, has come to a grinding halt. Patrick Snell takes a deeper look at the financial implications, both the money lost, and the money donated.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/football_02.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: green">
+                                        <p class="card-text">Mijatovic at the vanguard as Serbia chase milestone success</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card" style="color: green">
+                                <img src="imagens/football_03.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: green">
+                                        <p class="card-text">Experts warn lockdown could come at 'psychological cost' to footballers</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="card other_sports">
+                                <h5>See Also</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Forumula E</h5>
+                                <img src="imagens/main_01.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">Formula E is 'literally the future,' says Ellie Goulding</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Golf</h5>
+                                <img src="imagens/main_02.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">Golf locks in its 2020 major schedule amid postponements and cancellations</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">NBA</h5>
+                                <img src="imagens/main_03.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">Jalen Green, school basketball prospect, bypasses the NCAA for the NBA's G League</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Sailing</h5>
+                                <img src="imagens/main_04.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">America's Cup: Revolutionary 'flying' yachts take Auld Mug into new realm</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Rugby</h5>
+                                <img src="imagens/main_05.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">Age is just a number when it comes to playing rugby in Japan</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Horse Racing</h5>
+                                <img src="imagens/main_06.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">From 'useless' to trusted aide: The remarkable story of Enable's groom</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Skiing</h5>
+                                <img src="imagens/main_07.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">Mikaela Shiffrin returns to skiing after grieving death of father Jeff</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Tennis</h5>
+                                <img src="imagens/main_08.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">Coco Gauff says she was 'really depressed' and 'lost' for a year</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <h5 class="card-title">Formula One</h5>
+                                <img src="imagens/main_09.png" class="card-img-top">
+                                <div class="card-body">
+                                    <a href="#" style="color: black">
+                                        <p class="card-text">Formula One goes virtual as Bahrain Grand Prix kicks off the season</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <!--Aside Cards Area-->
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="aside">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="card BreakingNews_section">
+                                <h5>Breaking News</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/breakingnews_01.jpg" class="card-img-top" alt="Top_News">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card-body">
+                                <a href="#">
+                                    <p class="card-news">Scottish clubs vote to end Championship</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/breakingnews_02.jpg" class="card-img-top" alt="Top_News">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card-body">
+                                <a href="#">
+                                    <p class="card-news">Championships postponed until early July 'at the earliest'</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/breakingnews_03.jpeg" class="card-img-top" alt="Top_News">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card-body">
+                                <a href="#">
+                                    <p class="card-news">Sam Bennett prepared to return to Tour de France</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="card yoga_section">
+                                <h5>Yoga Anad Health</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_01.jpg" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">The benefits of yoga</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_02.png" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">How to increased flexibility</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_03.png" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">Yoga for elderly people</p>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_04.png" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">Free yoga classes at Marine Park</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_05.png" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">Yoga for mind stability</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_06.png" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">The benefits of green juice</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_07.png" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">The eating habits of athletes around the world</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <img src="imagens/yoga_08.png" class="card-img-top" alt="Top_News">
+                                <div class="card-yoga">
+                                    <a href="#">
+                                        <p class="yoga">Healthy Wealth, Body & Mind - What comes first?</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Aside Video-->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Enz98dDXQfY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen></iframe>
+                    
+                    </div>
+                </div>
+            </div> 
+
+            <!--Second Carousel Area-->
+            <div class="row">
+                <div class="col-12 carousel_main">
+                    <div class="container text-center my-3">
+                        <a href="#" style="color: black;">
+                            <h3>Best photos from the 2020 ski season</h3>
+                        </a>
+                        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner w-100" role="listbox">
+                                <div class="carousel-item row no-gutters active">
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_1.1.png"></div>
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_2.1.png"></div>
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_3.1.png"></div>
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_4.1.png"></div>
+                                </div>
+                                <div class="carousel-item row no-gutters">
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_5.1.png"></div>
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_6.1.png"></div>
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_7.1.png"></div>
+                                    <div class="col-3 float-left"><img class="img-fluid" src="imagens/carousel_8.1.png"></div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer Area-->
+    <footer class="container footer">
+        <div class="row">
+            
+            <div class="col-4 quick_links">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3>More</h3>
+                        <ul>
+                            <li>Home</li>
+                            <li>Athletes</li>
+                            <li>Work for All Sports</li>
+                            <li>Blog</li>
+                            <li>Galery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">    
+                <div class=row>   
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Social Media</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter">Twitter</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"> Facebook</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"> Instagram</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"> Youtube</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Phone: +1 944-857-6869 </li>
+                            <li>4604 Madison Ave, Sacramento, CA 95841, United States</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="copyright">Copyright - 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
